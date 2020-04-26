@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/bson-3.4.2.jar" sourcepath="C:/Users/WANGCY~1.COM/AppData/Local/Temp/decompiler/source/bson-3.4.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/mongodb-driver-3.4.2.jar" sourcepath="C:/Users/WANGCY~1.COM/AppData/Local/Temp/decompiler/source/mongodb-driver-3.4.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/mongodb-driver-core-3.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections4-4.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
