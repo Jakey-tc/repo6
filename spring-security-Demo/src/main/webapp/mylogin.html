@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 自定义的登录页面，地址一定是/login，且提交方法是POST
+		用户名的name值默认是username，密码的name值默认是password，可以在spring-securtiy中更改
+	 -->
+	<form action="/login" method="POST">
+		用户名：<input name="username">
+		密码：<input type="password" name="password">
+		<input type="submit" value="登录"/>
+	</form>
+
+</body>
+</html>

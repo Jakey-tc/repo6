@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">	
+
+	<!-- 监听器加载spring-securtiy.xml文件 -->
+  	 <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring-security.xml</param-value>
+	 </context-param>
+	 <listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	 </listener>
+	
+	<!-- 配置过滤器，使用DelegatingFilterProxy动态代理过滤器，所有的访问都会经过该过滤器找到springSecurityFilterChain这个类。
+	相当于spring-security的入口。注意filter-name不能更改，一定是springSecurityFilterChain-->
+	 <filter>  
+		<filter-name>springSecurityFilterChain</filter-name>  
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>  
+	 </filter>  
+	 <filter-mapping>  
+		<filter-name>springSecurityFilterChain</filter-name>  
+		<url-pattern>/*</url-pattern>  
+	 </filter-mapping>
+	
+</web-app>
